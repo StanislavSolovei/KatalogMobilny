@@ -9,6 +9,12 @@
             InitializeComponent();
         }
 
+        private void PokazClicked(object sender, EventArgs e)
+        {
+            EtykietaWyniku.Text = "Wybrano processor";
+        }
+
+        /*
         private void OnCounterClicked(object? sender, EventArgs e)
         {
             count++;
@@ -20,6 +26,7 @@
 
             SemanticScreenReader.Announce(Clicked.Text);
         }
+        */
     }
 }
 // pierwsze 05,854 s

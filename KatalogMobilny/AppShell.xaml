@@ -7,7 +7,7 @@
     Title="KatalogMobilny">
 
     <ShellContent
-        Title="Home"
+        Title="KatalogMobilny"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

@@ -2,7 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KatalogMobilny.MainPage">
-
+    <ScrollView>
+    <VerticalStackLayout Padding="16">
+        <Label Text="Procesor" FontSize="18" FlowDirection="MatchParent" TextColor="#2B4BCD"/>
+        <Image Source="processor.png" Aspect="AspectFit"/>
+        <Label Text="Prędkość: 3,6GHz" TextColor="Gray"/>
+        <Label Text="Ilość rdzeni: 5" TextColor="Gray"/>
+        <Label Text="Cena: 899zł" TextColor="Gray"/>
+        
+        <Label x:Name="EtykietaWyniku" Text="Nic nie wybrano"/>
+        <Button Text="Pokaż" Clicked="PokazClicked"/>
+    </VerticalStackLayout>
+        </ScrollView>
+        <!--
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -34,5 +46,6 @@
                 HorizontalOptions="Fill" BackgroundColor="#FF0000" />
         </VerticalStackLayout>
     </ScrollView>
-
+    -->
+    
 </ContentPage>
