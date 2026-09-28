@@ -11,7 +11,11 @@
         <Label Text="Cena: 899zł" TextColor="Gray"/>
         
         <Label x:Name="EtykietaWyniku" Text="Nic nie wybrano"/>
-        <Button Text="Pokaż" Clicked="PokazClicked"/>
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Pokaż" Clicked="PokazClicked"/>
+                <Button Text="Ukryj"/>
+            </HorizontalStackLayout>
+        
     </VerticalStackLayout>
         </ScrollView>
         <!--
