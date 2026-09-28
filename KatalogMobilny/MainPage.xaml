@@ -2,23 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KatalogMobilny.MainPage">
-    <ScrollView>
-    <VerticalStackLayout Padding="16">
-        <Label Text="Procesor" FontSize="18" FlowDirection="MatchParent" TextColor="#2B4BCD"/>
-        <Image Source="processor.png" Aspect="AspectFit"/>
-        <Label Text="Prędkość: 3,6GHz" TextColor="Gray"/>
-        <Label Text="Ilość rdzeni: 5" TextColor="Gray"/>
-        <Label Text="Cena: 899zł" TextColor="Gray"/>
-        
-        <Label x:Name="EtykietaWyniku" Text="Nic nie wybrano"/>
+    <!-- całość zamykamy w znaczniku grid -->
+    <Grid>
+        <!-- definijuemy ile jest wierszy i kolumn-->
+        <Grid.RowDefinitions>
+            <!-- zdecydujemy się na 5 wierszy -->
+            <RowDefinition Height="Auto"/> 
+            <!-- * oznacza, że wiersz zajmie pozostałą dostępna przestrzeń -->
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <!-- zdecydjumey się na 2 kolumny identycznej szekości -->
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+
+    <!--
+        <VerticalStackLayout Padding="16" x:Name="MainLayout">
+            <Label Text="Procesor" FontSize="18" FlowDirection="MatchParent" TextColor="#2B4BCD"/>
+            <Image Source="processor.png" Aspect="AspectFit"/>
+            <Label Text="Prędkość: 3,6GHz" TextColor="Gray"/>
+            <Label Text="Ilość rdzeni: 5" TextColor="Gray"/>
+            <Label Text="Cena: 899zł" TextColor="Gray"/>
+
+            <Label x:Name="EtykietaWyniku" Text="Nic nie wybrano"/>
             <HorizontalStackLayout Spacing="10">
                 <Button Text="Pokaż" Clicked="PokazClicked"/>
                 <Button Text="Ukryj"/>
             </HorizontalStackLayout>
-        
-    </VerticalStackLayout>
-        </ScrollView>
-        <!--
+
+        </VerticalStackLayout>
+    
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
