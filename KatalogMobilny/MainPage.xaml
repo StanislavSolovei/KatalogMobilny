@@ -6,6 +6,7 @@
     <Grid>
         <!-- definijuemy ile jest wierszy i kolumn-->
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <!-- zdecydujemy się na 5 wierszy -->
             <RowDefinition Height="Auto"/> 
             <!-- * oznacza, że wiersz zajmie pozostałą dostępna przestrzeń -->
@@ -20,13 +21,20 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <!-- po definicjach wierszy i kolumn możemy umieszczać elementy w gridzie -->
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Processor" FontSize="18" TextColor="#008BFF" HorizontalOptions="Center" Margin="0, 20"/>
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Processor" FontSize="18" TextColor="#008BFF" HorizontalOptions="Center" Margin="0, 20"/>
         <!-- obrazek analogicznie drugi wiersz, zajmie dwie kolumny -->
-        <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Source="processor.png" Aspect="AspectFit"/>
-        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Cena: 899 zł" FontSize="30" TextColor="Gray"/>
-        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" x:Name="EtykietaWyniku" Text="Nic nie wybrano"/>
-        <Button Grid.Row="4" Grid.Column="0" Text="Pokaż" Clicked="PokazClicked"/>
-        <Button Grid.Row="4" Grid.Column="1" Text="Ukryj"/>
+        <Image Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Source="processor.png" Aspect="AspectFit"/>
+        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Cena: 899 zł" FontSize="30" TextColor="Gray"/>
+        <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" x:Name="EtykietaWyniku" Text="Nic nie wybrano"/>
+        <Button Grid.Row="5" Grid.Column="0" Text="Pokaż" Clicked="PokazClicked"/>
+        <Button Grid.Row="5" Grid.Column="1" Text="Ukryj"/>
+        <FlexLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Wrap="Wrap" JustifyContent="Start" Padding="10">
+            <Button Text="Procesory"/>
+            <Button Text="Płyty główne"/>
+            <Button Text="Karty graficzne"/>
+            <Button Text="Dyski SSD"/>
+            <Button Text="Pamięci RAM"/>
+        </FlexLayout>
     </Grid>
 
     <!--
