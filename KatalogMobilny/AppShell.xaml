@@ -8,7 +8,7 @@
 
     <ShellContent
         Title="KatalogMobilny"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate local:NewProduktPage}"
         Route="MainPage" />
 
 </Shell>
