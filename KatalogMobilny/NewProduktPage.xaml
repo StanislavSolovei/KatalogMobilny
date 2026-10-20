@@ -41,5 +41,6 @@
             </VerticalStackLayout>
         </ScrollView>
         <Button Grid.Row="2" HeightRequest="52" HorizontalOptions="Fill" Text="Dodaj produkty"/>
+        <!-- <Button Grid.Row="2" HeightRequest="52" HorizontalOptions="Fill" Text="Dodaj produkty"/> -->
     </Grid>
 </ContentPage>
