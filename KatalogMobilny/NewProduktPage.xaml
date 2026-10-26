@@ -40,6 +40,10 @@
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </ScrollView>
-        <Button Grid.Row="2" HeightRequest="52" HorizontalOptions="Fill" Text="Dodaj produkty"/>
+        <VerticalStackLayout Grid.Row="2" Spacing="10">
+            <Button HeightRequest="52" Text="Dodaj produkty" Clicked="NowyProdukt_Clicked"/>
+            <Button HeightRequest="52" Text="Resetuj produkty" Clicked="NowyProdukt_Reset"/>
+            <Label x:Name="EtykietaWyniku"/>
+        </VerticalStackLayout>
     </Grid>
 </ContentPage>
