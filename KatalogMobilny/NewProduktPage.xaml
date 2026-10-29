@@ -35,8 +35,8 @@
                     </Picker>
                 </VerticalStackLayout>
                 <HorizontalStackLayout>
-                    <Switch HeightRequest="44" x:Name="AvailableSwitch"/>
-                    <Label Text="Produkt dostępny" VerticalOptions="Center"/>
+                    <Switch HeightRequest="44" x:Name="AvailableSwitch" Toggled="Zmiana"/>
+                    <Label Text="Produkt dostępny" x:Name="CzyDostepny" VerticalOptions="Center"/>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </ScrollView>
@@ -44,6 +44,7 @@
             <Button HeightRequest="52" Text="Dodaj produkty" Clicked="NowyProdukt_Clicked"/>
             <Button HeightRequest="52" Text="Resetuj produkty" Clicked="NowyProdukt_Reset"/>
             <Label x:Name="EtykietaWyniku"/>
+            <Label Text="Link do github: github.com/StanislavSolovei/KatalogMobilny" x:Name="Link"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
