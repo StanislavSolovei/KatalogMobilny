@@ -21,6 +21,10 @@
                     <Entry HeightRequest="44" x:Name="CenaEntry" Placeholder="0" Keyboard="Numeric"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Spacing="8">
+                    <Label Text="Ilosc"/>
+                    <Entry HeightRequest="44" x:Name="IloscEntry" Placeholder="0" Keyboard="Numeric"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Spacing="8">
                     <Label Text="Kategoria"/>
                     <Picker HeightRequest="44" x:Name="KategoriaPicker">
                         <Picker.ItemsSource>
