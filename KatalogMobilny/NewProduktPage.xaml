@@ -14,15 +14,15 @@
             <VerticalStackLayout Spacing="16">
                 <VerticalStackLayout Spacing="8">
                     <Label Text="Nazwa"/>
-                    <Entry HeightRequest="44" x:Name="NazwaEntry" Placeholder="Wpisz nazwę produktu"/>
+                    <Entry HeightRequest="44" x:Name="NazwaEntry" Placeholder="Wpisz nazwę produktu" TextChanged="NazwaEntry_TextChanged"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Spacing="8">
                     <Label Text="Cena"/>
-                    <Entry HeightRequest="44" x:Name="CenaEntry" Placeholder="0" Keyboard="Numeric"/>
+                    <Entry HeightRequest="44" x:Name="CenaEntry" Placeholder="0" Keyboard="Numeric" TextChanged="CenaEntry_TextChanged"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Spacing="8">
                     <Label Text="Ilosc"/>
-                    <Entry HeightRequest="44" x:Name="IloscEntry" Placeholder="0" Keyboard="Numeric"/>
+                    <Entry HeightRequest="44" x:Name="IloscEntry" Placeholder="0" Keyboard="Numeric" TextChanged="CenaEntry_TextChanged"/>
                 </VerticalStackLayout>
                 <VerticalStackLayout Spacing="8">
                     <Label Text="Kategoria"/>
@@ -42,13 +42,13 @@
                     <Switch HeightRequest="44" x:Name="AvailableSwitch" Toggled="Zmiana"/>
                     <Label Text="Produkt dostępny" x:Name="CzyDostepny" VerticalOptions="Center"/>
                 </HorizontalStackLayout>
+                <Label Text="Opis" x:Name="EtykietaWartosc"/>
             </VerticalStackLayout>
         </ScrollView>
         <VerticalStackLayout Grid.Row="2" Spacing="10">
             <Button HeightRequest="52" Text="Dodaj produkty" Clicked="NowyProdukt_Clicked"/>
             <Button HeightRequest="52" Text="Resetuj produkty" Clicked="NowyProdukt_Reset"/>
             <Label x:Name="EtykietaWyniku"/>
-            <Label Text="Link do github: github.com/StanislavSolovei/KatalogMobilny" x:Name="Link"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
