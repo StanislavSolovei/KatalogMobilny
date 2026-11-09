@@ -58,7 +58,12 @@ public partial class NewProduktPage : ContentPage
     private void NowyProdukt_Reset(object sender, EventArgs e)
     {
 		//licznik = 0;
-		EtykietaWyniku.Text = $"Zresetowane";
+		NazwaEntry.Text = "";
+        CenaEntry.Text = "";
+        IloscEntry.Text = "";
+		KategoriaPicker.SelectedItem = null;
+		AvailableSwitch.IsToggled = false;
+        EtykietaWyniku.Text = $"Zresetowane";
     }
 
     private void Zmiana(object sender, ToggledEventArgs e)
