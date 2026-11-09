@@ -50,8 +50,8 @@ public partial class NewProduktPage : ContentPage
 
     private void NowyProdukt_Reset(object sender, EventArgs e)
     {
-		licznik = 0;
-		EtykietaWyniku.Text = $"Kliknięcie zresetowane do {licznik}";
+		//licznik = 0;
+		EtykietaWyniku.Text = $"Zresetowane";
     }
 
     private void Zmiana(object sender, ToggledEventArgs e)
