@@ -5,6 +5,7 @@ public partial class NewProduktPage : ContentPage
 	private int licznik = 0;
 	public NewProduktPage()
 	{
+		Produkt p = new Produkt("Procesor Intel", 999.99, "Elektronika", 10);
 		InitializeComponent();
 	}
 
